@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+     <meta charset="UTF-8">
+     <title>Challenge_01:Encriptador e Decriptador de Texto</title>
+     <meta name="description" content="Challenge_01 ORACLE_ON Turma 05 GHM, Encriptador de Texto, Decriptador de Texto">
+     <meta name="keywords" content="oracle-one,alura,challenge">
+     <meta name="author" content="GHM">
+     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+     <link rel="stylesheet" href="./css/app.css">
+     <script src="./src/crypt.js"></script>
+     <script src="./src/app.js"></script>
+    </head>
+<body>
+
+    <header>
+        <img class="logo" src="./img/logo.svg" alt="a logo">
+    </header>
+
+<div class="center">
+    <main>
+        <form>
+        <textarea cols="70" rows="10" id="mensagem" class="txtArea" 
+        required="mensagem" placeholder="Digite seu texto" ondblclick="copClipboard()"></textarea>
+        <label for="mensagem" class="Advertencia">
+            <img src="./img/ex.svg" alt="Advertencia"><p>Apenas letras minúsculas e sem acento</p>
+            <div class="botoes">
+                <input type="button" value="Criptografar" class="button" onclick="encriptMsg()">
+                <input type="button" value="Decriptografar" class="button" onclick="decriptMsg()">
+            </div>
+        </label>
+        </form>
+    </main>
+    <aside> 
+    <label for="retorno" class="retorno">
+        <img class="figura" src="./img/figure.svg" alt="busca">
+        <h1>Nenhuma mensagem encontrada</h1>
+        <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+    </label>
+    </aside>
+</div>
+
+    <footer> 
+         <!-- Espaço vazio proporcional ao header -->
+    </footer>
+</body>
+</html>
