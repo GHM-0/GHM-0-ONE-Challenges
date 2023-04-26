@@ -1,0 +1,192 @@
+ /* Reset CSS */
+@import url('https://meyerweb.com/eric/tools/css/reset/reset.css');
+
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/*  Layouts
+
+1440 x 1024 Desktop
+
+768 x 1384  Tablet
+
+375 x933    Smartphone
+
+*/
+
+/* Para todos os Layouts Tentar Degradar Graciosamente */
+/* 1440 x 1024 Desktop [landscape]  [pointer:fine] e width > 768 */
+@media screen {
+    /* Sem seleção de texto */
+    img,label > p,label > h1,aside,header,footer,.Advertencia,.botoes{
+        user-select: none;
+    }
+
+    /* Sem interação com o usuário */
+    img,label > p,label > h1,header,footer{
+    pointer-events: none;
+    }
+    body{
+        background: #F3F5FC;
+    }
+    header,footer{          /* Container para header */  
+        width:100%;
+        height: 10%;
+    }
+        .logo{
+            top:0%;
+            margin-top: 1%;
+            margin-left:4%;
+        }
+    .center{          /* Container para o conetudo centralizado */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: no-wrap;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        bottom: 0%;
+        top:10%;
+    }
+    main{
+        margin-right: 4%;
+        margin-left: 4%;
+        flex-direction: column;
+        height: 100%;
+        width: 70%;
+    }
+    textarea{
+
+        width: 100%;
+        height:100%;
+        
+        border-style: none; 
+        border-color: Transparent; 
+
+        outline: none;
+        overflow: auto;
+        overflow-y: hidden;
+        
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 150%;
+
+        color: #0A3871;
+
+        background: Transparent;
+    
+        resize: none;
+    }        
+    .Advertencia{           /* Container para Controle */
+        width: 100%;
+        max-height: 10%;
+
+    }
+    .Advertencia > img{
+        float: left;
+        margin-right: 0.5%;
+    }    
+    .botoes{          /* Container para Botoes */
+       display: flex;  
+       align-items: center;
+       justify-content: center; 
+    
+       margin-top: 2%;
+
+       width:100%;
+       height:100%;
+    }
+    .botoes > input{
+        border-radius: 24px;
+        width: 150px;
+        height: 30px;
+        background-color:#D8DFE8;
+        padding: 2px;
+        gap: 8px;
+        font-weight: bold;
+        margin-right: 3%;
+    }
+    .botoes > input:hover{
+        background-color: #0A3871;
+        color:#FFFFFF;
+    }
+    aside{          /* Container para o Apresentação do Estado */
+        min-width: 30%;
+        flex-direction: column;
+        height: 100%;
+        margin: 4%;
+
+        background-color: #FFFFFF;
+
+        /* shadow */
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 12px;
+    }    
+    .retorno{          /* Container para o Estado */
+        display: flex;  
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .retorno > img{
+        top:20%;
+    }
+    .retorno > h1,.retorno > p{
+        margin:4%; 
+        color: #343A40;
+    }
+    .retorno > h1{
+        font-weight: bold;
+        font-size: 2em;
+    }
+    .retorno > p{
+        font-size: 1em;
+    } 
+}
+
+/* Telas Touch  [pointer:coarse] */
+@media screen and (pointer:coarse){
+    /* Botão Copiar */
+    #copiar{
+        display:flex;
+        align-items: center;
+        justify-content: center; 
+
+        bottom: 30%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:530px){
+    .center{
+        height:100%;
+        bottom: 0%;
+    }
+    main{
+        height:100%;
+        width:100%;
+    }
+    aside{
+        display:inline-block;
+        position:absolute;
+        height:18%;
+        width:92%;
+        bottom: 24%;
+    }
+    .figura{
+        visibility:hidden;
+        display:none;
+    }
+    .botoes{
+        width: 100%;
+        margin:0%;
+    }
+    .retorno{
+        display:flex;
+        align-items: center;
+        justify-content: center; 
+    }
+}
