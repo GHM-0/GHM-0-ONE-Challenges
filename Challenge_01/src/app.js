@@ -57,7 +57,7 @@ function checkMsg() {
       } else {
          // Se pointer for mouse == Desktop
          document.querySelector(".retorno").querySelector('h1').innerHTML = "<h1>Mensagem encontrada</h1>";
-         document.querySelector(".retorno").querySelector('p').innerHTML = "<p>Click dublo para copiar a mensagem para o clipboard.</p>";
+         document.querySelector(".retorno").querySelector('p').innerHTML = "<p>Click dublo para copiar a mensagem para o clipboard.</p><br>";
       };
    };
 };

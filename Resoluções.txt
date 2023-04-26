@@ -1,0 +1,18 @@
+/*  Layouts
+
+1440 x 1024 Desktop
+
+768 x 1384  Tablet
+
+375 x933    Smartphone
+
+*/
+
+1440 x 1024 Desktop [landscape]  [pointer:fine]
+
+[pointer:coarse]
+768 x 1384  Tablet (landscape)
+portrait >= 768
+
+375 x933    Smartphone (landscape)
+portrait >=375
