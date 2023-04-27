@@ -15,7 +15,7 @@
 */
 
 /* Para todos os Layouts Tentar Degradar Graciosamente */
-/* 1440 x 1024 Desktop [landscape]  [pointer:fine] e width > 768 */
+/* 1440 x 1024 Desktop [landscape]  [pointer:fine] e width > 530px */
 @media screen {
     /* Sem seleção de texto */
     img,label > p,label > h1,aside,header,footer,.Advertencia,.botoes{
