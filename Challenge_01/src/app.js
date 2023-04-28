@@ -57,7 +57,7 @@ function checkMsg() {
       } else {
          // Se pointer for mouse == Desktop
          document.querySelector(".retorno").querySelector('h1').innerHTML = "<h1>Mensagem encontrada</h1>";
-         document.querySelector(".retorno").querySelector('p').innerHTML = "<p>Click dublo para copiar a mensagem para o clipboard.</p><br>";
+         document.querySelector(".retorno").querySelector('p').innerHTML = "<p>Click dublo para copiar a mensagem para o clipboard.</p>";
       };
    };
 };
@@ -75,3 +75,14 @@ function copClipboard() {
    }    
 };
 
+
+const ScreenType= function isSmallLandscape(){
+   if(window.innerWidth < 768 && screen.orientation.type=='landscape-primary'){
+      let botoes= document.querySelector(".Advertencia"); 
+      document.querySelector("aside").appendChild(botoes);
+   };
+};
+
+document.addEventListener("DOMContentLoaded", function() {
+      ScreenType();
+});
